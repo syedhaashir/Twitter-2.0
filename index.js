@@ -8,6 +8,7 @@ import {
   faRetweet,
   faArrowUpFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
+import { FaTwitter } from "react-icons/fa";
 import "./index.css";
 
 function Hi(props) {
@@ -17,7 +18,7 @@ function Hi(props) {
         <div className="post-header">
           <img className="profilePhoto" src={props.pfp} alt="Profile Pic" />
           <div>
-            {props.name}
+            <strong>{props.name}</strong>
             <br />
             {moment(props.postdate).fromNow()}
           </div>
@@ -34,7 +35,7 @@ function Hi(props) {
           <FontAwesomeIcon icon={faRetweet} />
           </div>
           <div className="heart">
-          <FontAwesomeIcon icon={faHeart} />
+          <FontAwesomeIcon icon={faHeart} title="Like" />
           </div>
           <div className="share">
             <FontAwesomeIcon icon={faArrowUpFromBracket} />
@@ -48,7 +49,8 @@ function Hi(props) {
 function Page(){
   return <div className="page">
   <div className="page-header">
-    <h1>Twitter</h1>
+    <h1 className="brandName">Twitter</h1>
+    <div className="logo"><FaTwitter/></div>
     </div>
 
     <Hi

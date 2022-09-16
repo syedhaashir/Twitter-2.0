@@ -1,10 +1,40 @@
 /* *{
   background: #000;
 } */
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
 .twitter{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.page{
+  background-color: #00abeeb9;
+}
+
+.page-header{
+  background-color: #000000;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+.page-header .logo{
+  font-size: 35px;
+  color: #ffffff;
+  padding-top:40px ;
+}
+
+.brandName{
+  font-family: Helvetica, sans-serif  ;
+  color:  #ffffff;
+  font-size: 40PX;
+  padding: 10px;
+  padding-left: 10px;
 }
 
 .post{
