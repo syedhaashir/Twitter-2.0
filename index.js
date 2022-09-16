@@ -27,16 +27,16 @@ function Hi(props) {
           <img className="image" src={props.postimg} alt="Post" />
         </div>
         <div className="post-footer">
-          <div>
+          <div className="comment">
             <FontAwesomeIcon icon={faComment} />
           </div>
-          <div>
+          <div className="retweet">
           <FontAwesomeIcon icon={faRetweet} />
           </div>
-          <div>
+          <div className="heart">
           <FontAwesomeIcon icon={faHeart} />
           </div>
-          <div>
+          <div className="share">
             <FontAwesomeIcon icon={faArrowUpFromBracket} />
           </div>
         </div>
@@ -47,10 +47,18 @@ function Hi(props) {
 
 function Page(){
   return <div className="page">
+  <div className="page-header">
     <h1>Twitter</h1>
-   
+    </div>
 
-
+    <Hi
+      name="Cristiano Ronaldo"
+      pfp="https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg"
+      postdate="16-Sep-2022"
+      postcap="Happy to score and help the team win! 3 important points! 
+                Well done lads 👏🏽💪🏽"
+      postimg="https://pbs.twimg.com/media/FcuIJqSX0AEnS7y?format=jpg&name=large"
+    />
     <Hi
       name="Cristiano Ronaldo"
       pfp="https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg"
