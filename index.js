@@ -8,10 +8,13 @@ import {
   faRetweet,
   faArrowUpFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
-import { FaTwitter } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
 import "./index.css";
-import { FiSearch } from "react-icons/fi";
+// import { FiSearch } from "react-icons/fi";
 import Navbar from "./Components/Navbar/navbar.jsx";
+import Sidebar from "./Components/Sidebar/sidebar.jsx"
+import Trends from "./Components/Trends/trends.jsx"
+
 
 function Hi(props) {
   return (
@@ -55,8 +58,16 @@ function Page() {
     <Navbar/>
     <div className="main">
     <div className="sidebar">
-      <h1>Explore</h1>
+    <Sidebar/>
     </div>
+    <div className="main-post">
+      <Hi
+        name="Cristiano Ronaldo"
+        pfp="https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg"
+        postdate="21-Sep-2022"
+        postcap="Feliz por estar de volta a casa! 😀🇵🇹🙏🏽"
+        postimg="https://pbs.twimg.com/media/FdMQowBXkAMjF50?format=jpg&name=large"
+      />
       <Hi
         name="Cristiano Ronaldo"
         pfp="https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg"
@@ -95,6 +106,10 @@ function Page() {
         postimg="https://pbs.twimg.com/media/FbLqQHWUEAE61zy?format=jpg&name=large"
       />
       </div>
+      </div>
+      <div className="trends">
+      <Trends/>
+    </div>
     </div>
   );
 }

@@ -82,3 +82,7 @@ body{
   align-items: stretch;
   justify-content: space-around;
 }
+
+.main-post{
+  overflow-y: scroll;
+}

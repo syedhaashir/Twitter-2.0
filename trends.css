@@ -1,0 +1,11 @@
+.trend .head{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+    position: absolute;
+    right: 205px;
+    top: 150px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica, sans-serif;
+}

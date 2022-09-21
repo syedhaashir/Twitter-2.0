@@ -1,0 +1,21 @@
+.explore{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+    position: absolute;
+    left: 40px;
+    top: 150px;
+    font-size: 25px;
+    color: rgb(37, 36, 36);
+}
+
+.settings{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+    position: absolute;
+    left: 40px;
+    top: 200px;
+    font-size: 25px;
+    color: rgb(37, 36, 36);
+}
