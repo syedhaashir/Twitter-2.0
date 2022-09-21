@@ -11,6 +11,7 @@ import {
 import { FaTwitter } from "react-icons/fa";
 import "./index.css";
 import { FiSearch } from "react-icons/fi";
+import Navbar from "./Components/Navbar/navbar.jsx";
 
 function Hi(props) {
   return (
@@ -49,25 +50,13 @@ function Hi(props) {
 
 function Page() {
   return (
-    <div className="page">
-      <div className="page-header">
-        <h1 className="brandName">Twitter</h1>
-        <div className="logo">
-          <FaTwitter />
-        </div>
-        <div className="searchbar">
-          <div className="icon">
-            <FiSearch />
-          </div>
-          <input
-            className="search"
-            type="text"
-            name="search"
-            placeholder="        Search Twitter"
-          ></input>
-        </div>
-      </div>
-
+    
+    <div>    
+    <Navbar/>
+    <div className="main">
+    <div className="sidebar">
+      <h1>Explore</h1>
+    </div>
       <Hi
         name="Cristiano Ronaldo"
         pfp="https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg"
@@ -105,6 +94,7 @@ function Page() {
         postcap="3 important points! 💪🏽  #mufc"
         postimg="https://pbs.twimg.com/media/FbLqQHWUEAE61zy?format=jpg&name=large"
       />
+      </div>
     </div>
   );
 }
